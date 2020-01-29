@@ -39,5 +39,6 @@ pipelines:
                variables:
                 AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
-                DISTRIBUTION_ID: $STAGING_DISTRIBUTION_ID
+                AWS_DEFAULT_REGION: 'ap-south-1'
+                S3_BUCKET: 'bibucket-pipeline-code-deploy'
+                DISTRIBUTION_ID: 'E1VFZCVR75Q3YE'
