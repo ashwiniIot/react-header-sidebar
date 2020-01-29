@@ -25,7 +25,7 @@ pipelines:
             - npm run build
             - ls -ltr
             - cd build
-            - pipe: atlassian/aws-s3-deploy:0.4.0
+            - pipe: atlassian/aws-s3-deploy:0.3.2
               variables:
                 AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
