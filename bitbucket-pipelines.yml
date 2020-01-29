@@ -25,13 +25,12 @@ pipelines:
             - npm run build
             - ls -ltr
             - cd build
-            - pipe: atlassian/aws-s3-deploy:0.3.2
+            - pipe: atlassian/aws-s3-deploy:0.4.0
               variables:
                 AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
                 AWS_DEFAULT_REGION: 'ap-south-1'
                 S3_BUCKET: 'bibucket-pipeline-code-deploy'
-                LOCAL_PATH: "build"
       - step:
           name: Invalidate Cloudfront Cache
           script:
