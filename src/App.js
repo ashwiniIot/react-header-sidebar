@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import OrganizationForm from './OrganizationForm';
 import OrganizationList from './OrganizationList';
-import MenuIcon from '@material-ui/icons/Menu';
 import SideBar from './Shared/SideBar'
 
 

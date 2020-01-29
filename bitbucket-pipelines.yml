@@ -12,7 +12,6 @@ pipelines:
           name: Build
           script:
             - npm install
-            - npm run build
           artifacts:
             - build/**
       - step:
