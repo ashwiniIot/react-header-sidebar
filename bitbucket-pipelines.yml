@@ -31,6 +31,7 @@ pipelines:
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
                 AWS_DEFAULT_REGION: 'ap-south-1'
                 S3_BUCKET: 'bibucket-pipeline-code-deploy'
+                LOCAL_PATH: "./"
       - step:
           name: Invalidate Cloudfront Cache
           script:
